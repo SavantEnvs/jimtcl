@@ -1,0 +1,5 @@
+puts [expr {2**10}]
+puts [expr {sqrt(2)}]
+puts [expr {(1 << 4) | 3}]
+puts [expr {"abc" eq "abc"}]
+puts [expr {5 > 3 && 2 < 4}]
