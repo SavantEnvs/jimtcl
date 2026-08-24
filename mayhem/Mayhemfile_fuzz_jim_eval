@@ -1,0 +1,11 @@
+project: savantenvs/jimtcl
+target: fuzz_jim_eval
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_jim_eval/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_jim_eval
+    libfuzzer: true
+    timeout: 30
+    env:
+      MFUZZ_COMPAT_LEVEL: '2'
